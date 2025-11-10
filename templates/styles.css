@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    /* Agrega aquí el código para el elemento ul */
+
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input{
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}input::placeholder{
+    color: #ccc;
+}
+body{background-color: #f2f2f2;
+}
+form{
+    background-color: #fff;
+    width: 600px;
+    height: auto;
+    padding: 20px;
+    margin: 0px auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+.formulario-ul{
+    display: flex;
+    gap: 0 10px;
+}
+.li-formulario a{
+    color: #888;
+    font-weight: bold;
+}
+.li-formulario a.activo{
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+.inputs{
+    width: 70%;
+    margin: 0 auto;
+}
+.h2-registro{
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-top: 20px;
+}
+label{
+    display: block;
+    margin-top: 25px;
+    color: #aaa;
+}
+.boton{
+    display: block;
+    width: 250%;
+    border: 1px solid #104E8B;
+    background-color: #1E90FF;
+    height: 40px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+p{
+    text-align: center
+}
+p a{
+    color: #1E90FF;
+}
+@media screen and (max-width: 600px){
+    form{
+        width: 100%;
+    }
+    .li-formulario a.activo{
+        border: 2px solid #ccc;
+        padding: 5px;
+    }
+}
