@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
+
+<html lang="en">
+<!-- Inicio del documento HTML indicando que el idioma es inglés -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Configura la codificación de caracteres para admitir acentos -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Permite que la página sea responsive en celulares -->
+
+    <title>Formulario</title>
+    <!-- Título de la pestaña del navegador -->
+
+    <style>
+        /* Reinicio básico de estilos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Incluye borde y padding en el tamaño */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente general */
+        }
+
+        ul {
+            list-style: none; /* Quita los puntos de las listas */
+        }
+
+        a {
+            text-decoration: none; /* Quita el subrayado de los enlaces */
+        }
+
+        input {
+            width: 100%; /* Cada input ocupa todo el ancho */
+            height: 35px; /* Altura del input */
+            border: none; /* Quita el borde */
+            border-bottom: 1px solid #ccc; /* Línea inferior */
+            outline: none; /* Quita borde azul al hacer clic */
+        }
+
+        input::placeholder {
+            color: #ccc; /* Color del texto placeholder */
+        }
+
+        body {
+            background-color: #f2f2f2; /* Color gris claro de fondo */
+        }
+
+        form {
+            background-color: #fff; /* Fondo blanco del formulario */
+            width: 600px; /* Ancho del formulario */
+            height: auto; /* Alto dinámico */
+            padding: 20px; /* Espaciado interno */
+            margin: 0px auto; /* Centrado */
+        }
+
+        nav {
+            display: flex; /* Alinear elementos horizontalmente */
+            justify-content: space-between; /* Separarlos a los lados */
+            border-bottom: 1px solid #ccc; /* Línea inferior */
+        }
+
+        .formulario-ul {
+            display: flex; /* Ítems horizontales */
+            gap: 0 10px; /* Separación entre items */
+        }
+
+        .li-formulario a {
+            color: #888; /* Color del texto */
+            font-weight: bold; /* Negrita */
+        }
+
+        .li-formulario a.activo {
+            border: 2px solid #ccc; /* Borde para resaltar la opción activa */
+            padding: 10px; /* Espaciado */
+        }
+
+        .inputs {
+            width: 70%; /* Contenedor más estrecho */
+            margin: 0 auto; /* Centrado */
+        }
+
+        .h2-registro {
+            text-align: center; /* Centra el título */
+            font-size: 28px; /* Tamaño de letra */
+            color: #333; /* Color gris oscuro */
+            margin-top: 20px; /* Separación superior */
+        }
+
+        label {
+            display: block; /* Cada label en una fila */
+            margin-top: 25px; /* Separación superior */
+            color: #aaa; /* Color gris claro */
+        }
+
+        .boton {
+            display: block; /* Forzar bloque */
+            width: 250%; /* Error: demasiado ancho (se sale del formulario) */
+            border: 1px solid #104E8B; /* Borde azul */
+            background-color: #1E90FF; /* Fondo azul */
+            height: 40px; /* Altura del botón */
+            font-weight: bold; /* Negrita */
+            color: #fff; /* Texto blanco */
+            border-radius: 5px; /* Bordes redondeados */
+            margin: 20px auto; /* Centrado */
+        }
+
+        p {
+            text-align: center; /* Texto centrado */
+        }
+
+        p a {
+            color: #1E90FF; /* Color azul del enlace */
+        }
+
+        /* Estilos para pantallas pequeñas */
+        @media screen and (max-width: 600px) {
+            form {
+                width: 100%; /* El formulario ocupa toda la pantalla */
+            }
+
+            .li-formulario a.activo {
+                border: 2px solid #ccc;
+                padding: 5px; /* Reduce padding en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form class="formulario">
+        <!-- Contenedor principal del formulario -->
+
+        <nav>
+            <!-- Barra superior con logo y menú -->
+
+            <img src="file:///C:/Users/SENA/Downloads/image%20(2).png"
+            alt="Logo">
+            <!-- Imagen del logo -->
+
+            <br>
+            <!-- Salto de línea -->
+
+            <ul class="formulario-ul">
+                <!-- Lista de navegación -->
+
+                <li class=""li-formulario>
+                    <!-- ERROR: comillas mal ubicadas, debería ser class="li-formulario" -->
+                    <a href="login.html">Iniciar Sesión</a>
+                    <!-- Enlace para ir al login -->
+                </li>
+
+                <li class="li-formulario">
+                    <a href="formulario.html" class="activo">Registrarse</a>
+                    <!-- Enlace marcado como activo -->
+                </li>
+            </ul>
+        </nav>
+
+        <h2 class="h2-registro">Registro</h2>
+        <!-- Título de la página -->
+
+        <section class="inputs">
+            <!-- Contenedor de los campos del formulario -->
+
+            <label>UserName</label>
+            <!-- Etiqueta del campo -->
+
+            <input type="text" placeholder="Por ejemplo: SrSpes">
+            <!-- Campo de usuario -->
+
+            <label>Email</label>
+            <input type="email" placeholder="Por ejemplo: tuemail@gmail.com">
+            <!-- Campo de correo -->
+
+            <label>Contraseña</label>
+            <input type="password">
+            <!-- Campo de contraseña -->
+
+            <label>Confirmar Contraseña</label>
+            <input type="password">
+            <!-- Campo para confirmar contraseña -->
+        </section>
+
+        <button>Enviar</button>
+        <!-- Botón para enviar el formulario -->
+
+        <p>Ya tienes una cuenta? <a href="login.html">Inicia tu Sesión</a></p>
+        <!-- Enlace para ir a la página de login -->
+</body>
+</html>
